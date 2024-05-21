@@ -18,7 +18,7 @@ export default function Cadastro() {
             password: password
         };
 
-        axios.post('http://127.0.0.1:8000/api/users/', data)
+        axios.post('https://projeto-3-agnelo.onrender.com/api/users/', data)
         .then((response) => {
             console.log(response);
             navigate('/');

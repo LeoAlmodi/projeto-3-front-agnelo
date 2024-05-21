@@ -9,7 +9,7 @@ export default function MyNotes() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/api/my_notes/', {
+        axios.get('https://projeto-3-agnelo.onrender.com/api/my_notes/', {
             headers: {
                 'Authorization': `Token ${localStorage.getItem('token')}`
             }

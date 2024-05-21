@@ -17,7 +17,7 @@ export default function Login() {
             password: password
         };
 
-        axios.post('http://127.0.0.1:8000/api/token/', data)
+        axios.post('https://projeto-3-agnelo.onrender.com/api/token/', data)
         .then((response) => {
             const token = response.data.token;
             localStorage.setItem('token', token);

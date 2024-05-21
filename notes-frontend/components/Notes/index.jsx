@@ -10,7 +10,7 @@ export default function Note() {
   const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get('http://127.0.0.1:8000/api/all_notes/', {
+        axios.get('https://projeto-3-agnelo.onrender.com/api/all_notes/', {
           headers: {
               'Authorization': `Token ${localStorage.getItem('token')}`
           }
@@ -24,7 +24,7 @@ export default function Note() {
 
       let createNote = (event) => {
         event.preventDefault();
-        axios.post('http://127.0.0.1:8000/api/create_note/', {content: `${content}`}, {
+        axios.post('https://projeto-3-agnelo.onrender.com/api/create_note/', {content: `${content}`}, {
           headers: {
               'Authorization': `Token ${localStorage.getItem('token')}`
           }
